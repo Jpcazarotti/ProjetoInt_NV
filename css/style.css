@@ -18,9 +18,10 @@ body {
 }
 
 #cabecalho {
-  background-color: var(--secundaria);
+  background: radial-gradient(circle, #49c0dc, #1a7488, #075769);
   height: 90px;
   padding: 11px;
+  border: 1px solid #075769;
 }
 
 #logo {
@@ -59,7 +60,7 @@ body {
 #banner,
 #bannertwo {
   position: relative;
-  background: url(/img/depression-824998_1920.png) no-repeat;
+  background: url(/img/cachoeira.jpg) no-repeat;
   background-size: cover;
   height: 900px;
   color: white;
@@ -72,22 +73,18 @@ body {
 #banner::after {
   content: "";
   position: absolute;
-  top: 80px;
-  left: 0;
   width: 100%;
-  height: 40%;
-  background-color: rgba(73, 192, 220, 0.5);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 #bannertwo::after {
   content: "";
   position: absolute;
-  top: 120px;
-  left: 0;
   width: 100%;
-  height: 20%;
-  background-color: rgba(73, 192, 220, 0.5);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -194,6 +191,11 @@ body {
 
 #botoes_aten button {
   padding: 0px 60px;
+}
+
+.backBotoes {
+  background: none;
+  border: none;
 }
 
 #rowonline {
