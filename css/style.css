@@ -328,12 +328,12 @@ body {
 
 footer {
   border-top: 1px rgba(73, 192, 220, 0.6) solid;
+  text-align: center;
 }
 
 #rodape {
   margin-top: 25px;
   margin-bottom: 40px;
-  margin-right: 180px;
 }
 
 #rodape a {
