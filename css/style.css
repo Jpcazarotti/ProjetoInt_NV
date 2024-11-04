@@ -59,8 +59,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#banner,
-#bannertwo {
+#banner {
   position: relative;
   background: url(../img/cachoeira.jpg) no-repeat;
   background-size: cover;
@@ -72,16 +71,19 @@ body {
   font-weight: bold;
 }
 
-#banner::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+#banner_two {
+  position: relative;
+  background: url(../img/cachoeira.jpg) no-repeat;
+  background-size: cover;
+  height: 867px;
+  color: var(--texto2);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
 
-#bannertwo::after {
+#banner::after, #banner_two::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -310,11 +312,12 @@ body {
   display: flex;
   border-left: 5px rgba(49, 87, 224, 0.9) solid;
   height: 45px;
+  margin-top: 15px;
 }
 
 .h4pdp2 {
   display: flex;
-  margin-top: 8px;
+  margin-top: auto;
   margin-left: 5px;
   font-size: 24px;
   font-weight: 500;
@@ -326,7 +329,7 @@ body {
   margin-left: 10px;
 }
 
-footer {
+#footer {
   border-top: 1px rgba(73, 192, 220, 0.6) solid;
   text-align: center;
 }
@@ -342,19 +345,17 @@ footer {
 }
 
 .rd {
-  margin-right: 180px;
+  margin-right: 150px;
 }
 
 .rp {
   position: relative;
-  top: 10px;
-  left: 0;
+  top: 8px;
   padding: 0;
-  margin: 0;
 }
 
 .rp li {
-  padding: 5px;
+  padding: 2px;
 }
 
 .fa-envelope {
@@ -371,6 +372,22 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
+}
+
+#copyright_estilo2 p{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;  
+  background-color: rgba(73, 192, 220, 0.2);
+  color: white;
+  border: 1px solid rgba(73, 192, 220, 0.1);
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
