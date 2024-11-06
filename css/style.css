@@ -16,7 +16,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--texto);
-  background-color: var(--texto2);
+  background-color: white;
 }
 
 #cabecalho {
@@ -306,6 +306,39 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   padding: 10px;
+}
+
+.col_acordeao {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+#banner_two {
+  .accordion-button {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    border: none;
+
+    &.collapsed {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #ffffff;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #ffffff;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .accordion-body {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+  }
 }
 
 .h4pdp {
