@@ -314,33 +314,6 @@ body {
   align-items: end;
 }
 
-#banner_two {
-  .accordion-button {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-    border: none;
-
-    &.collapsed {
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #ffffff;
-    }
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.9);
-      color: #ffffff;
-    }
-
-    &:focus {
-      box-shadow: none;
-    }
-  }
-
-  .accordion-body {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-  }
-}
-
 .h4pdp {
   display: flex;
   border-left: 5px rgba(49, 87, 224, 0.9) solid;
