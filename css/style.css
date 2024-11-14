@@ -83,7 +83,8 @@ body {
   font-weight: bold;
 }
 
-#banner::after, #banner_two::after {
+#banner::after,
+#banner_two::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -188,7 +189,7 @@ body {
 
 #botoes {
   width: 100%;
-  min-height: 400px;  
+  min-height: 400px;
 }
 
 .backBotoes {
@@ -199,7 +200,7 @@ body {
 .boxImg {
   display: flex;
   background-color: white;
-  border: 2px solid #2f2f2f;
+  border: 1px solid rgba(47, 47, 47, 0.1);
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -207,6 +208,12 @@ body {
   text-align: center;
   align-items: center;
   margin-bottom: 7%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxImg:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 #botoes_aten button {
@@ -236,7 +243,11 @@ body {
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.btn_text a {
+.btn_text a, .btn_text #ahref {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--texto);
   text-decoration: none;
 }
@@ -380,7 +391,7 @@ body {
   margin-bottom: 0;
 }
 
-#copyright_estilo2 p{
+#copyright_estilo2 p {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -389,7 +400,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px;  
+  height: 70px;
   background-color: rgba(73, 192, 220, 0.2);
   color: white;
   border: 1px solid rgba(73, 192, 220, 0.1);
