@@ -6,8 +6,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -29,7 +29,7 @@ body {
 #logo {
   margin-left: -210px;
   text-decoration: none;
-  margin-top: -26px;
+  margin-top: -9%;
 }
 
 #menu {
@@ -63,7 +63,7 @@ body {
   position: relative;
   background: url(../img/cachoeira.jpg) no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 867px;
   color: var(--texto2);
   text-align: center;
   display: flex;
@@ -238,9 +238,15 @@ body {
 }
 
 .bt_img {
-  border: 2px solid #2f2f2f;
-  border-radius: 30px;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  border: 0.5px solid rgba(0, 0, 0, 0.6);
+  border-radius: 35px;
+  box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bt_img:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 .btn_text a, .btn_text #ahref {
