@@ -355,11 +355,12 @@ body {
 #footer {
   border-top: 1px rgba(73, 192, 220, 0.6) solid;
   text-align: center;
+  font-size: 15px;
 }
 
 #rodape {
   margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 #rodape a {
@@ -382,10 +383,9 @@ body {
 }
 
 .fa-envelope {
-  font-size: 20px;
-  color: var(--texto);
-  margin-right: 10px;
-  align-items: center;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-right: 5px;
 }
 
 #copyright p {
