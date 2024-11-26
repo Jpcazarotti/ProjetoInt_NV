@@ -3,7 +3,7 @@
 class DBConexao
 {
     private $host = "localhost";
-    private $dbname = "CAM";
+    private $dbname = "pi";
     private $username = "root";
     private $password = "";
 
