@@ -85,7 +85,7 @@
     </header>
 
     <main>
-      <section id="banner_two">
+      <section id="banner">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-5 texto_banner col_acordeao">

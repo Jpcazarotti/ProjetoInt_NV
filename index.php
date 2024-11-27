@@ -71,8 +71,10 @@
               <li><a href="view/sobre_nos.php">Sobre Nós</a></li>
               <li><a href="view/nt.php">Notícias e Atualizações</a></li>
             </ul>
-            <button type="submit"><a href="view/login.php">Login</a></button>
           </nav>
+          <div id="login">
+            <button type="submit"><a href="view/login.php">Login</a></button>
+          </div>
         </div>
       </div>
     </div>

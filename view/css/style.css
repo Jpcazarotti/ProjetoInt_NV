@@ -71,20 +71,7 @@ body {
   font-weight: bold;
 }
 
-#banner_two {
-  position: relative;
-  background: url(../img/cachoeira.jpg) no-repeat;
-  background-size: cover;
-  height: 867px;
-  color: var(--texto2);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-}
-
-#banner::after,
-#banner_two::after {
+#banner::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -110,6 +97,13 @@ body {
 }
 
 .texto_banner_three {
+  content: "";
+  position: absolute;
+  top: 180px;
+  z-index: 2;
+}
+
+.texto_banner_login {
   content: "";
   position: absolute;
   top: 180px;
@@ -249,7 +243,8 @@ body {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
-.btn_text a, .btn_text #ahref {
+.btn_text a,
+.btn_text #ahref {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -350,6 +345,29 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin-left: 10px;
+}
+
+.label_email_senha {
+  margin-right: 350px;
+}
+
+.lembrar_me {
+  margin-right: 280px;
+}
+
+.btnLogar {
+  background-color: rgb(73, 192, 220, 0.8);
+  width: 90px;
+  border: none;
+  border-radius: 30px;
+  margin-left: 300px;
+  margin-top: -75px;
+}
+
+#txt_login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -40px;
 }
 
 #footer {

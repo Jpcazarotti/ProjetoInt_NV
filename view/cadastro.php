@@ -40,7 +40,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header id="cabecalho">
@@ -48,7 +48,7 @@
         <div class="row">
           <div class="col-md-3">
             <h1 id="logo">
-              <a href="index.html"
+              <a href="../index.php"
                 ><img
                   src="img/Projeto Remover fundo.png"
                   alt="Logo"
@@ -60,9 +60,9 @@
           <div id="menu" class="col-md-5">
             <nav>
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre_nos.html">Sobre Nós</a></li>
-                <li><a href="nt.html">Notícias e Atualizações</a></li>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="sobre_nos.php">Sobre Nós</a></li>
+                <li><a href="nt.php">Notícias e Atualizações</a></li>
               </ul>
             </nav>
           </div>
@@ -178,6 +178,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
