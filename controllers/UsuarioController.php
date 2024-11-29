@@ -1,7 +1,7 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/models/Usuario.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/models/Paciente.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/models/Psicologo.php";
+require_once __DIR__ . '../models/UsuarioModel.php';
+require_once __DIR__ . '../models/PacienteModel.php';
+require_once __DIR__ . '../models/PsicologoModel.php';
 
 class UsuarioController {
 
@@ -9,12 +9,12 @@ class UsuarioController {
     private $pacienteModel;
     private $psicologoModel;
 
-    public function __construct()
-    {
-        $this->usuarioModel = new Usuario();
-        $this->pacienteModel = new Paciente();
-        $this->psicologoModel = new Psicologo();
-    }
+    // public function __construct()
+    // {
+    //     $this->usuarioModel = new Usuario();
+    //     $this->pacienteModel = new Paciente();
+    //     $this->psicologoModel = new Psicologo();
+    // }
 
     // Listar todos os usuários
     public function listarUsuario(){

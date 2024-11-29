@@ -3,7 +3,7 @@ require_once 'DBConexao.php';
 
 class UsuarioModel
 {
-
+    private $usuario;
     private $conn;
 
     public function __construct()
@@ -37,6 +37,8 @@ class UsuarioModel
 
     public function createUsuario($dados)
     {
+        $this->usuario = new UsuarioModel();
+        
         try {
             $query = "INSERT INTO usuarios (nome, email, senha, tipo) VALUES (:nome, :email, :senha, :tipo)";
             $stmt = $this->conn->prepare($query);
