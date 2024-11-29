@@ -1,16 +1,18 @@
 <?php
 require_once 'DBConexao.php';
 
-class InstituicaoModel {
+class InstituicaoModel
+{
 
     private $conn;
 
-    public function __construct() {
-        $db = new DBConexao();
-        $this->conn = $db->getConnection();
+    public function __construct()
+    {
+        $this->conn = DBConexao::getConexao();
     }
 
-    public function getAllInstituicoes() {
+    public function getAllInstituicoes()
+    {
         $query = "SELECT id, nome, endereco FROM instituicoes";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();

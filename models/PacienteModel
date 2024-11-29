@@ -6,8 +6,7 @@ class PacienteModel {
     private $conn;
 
     public function __construct() {
-        $db = new DBConexao();
-        $this->conn = $db->getConnection();
+        $this->conn = DBConexao::getConexao();
     }
 
     public function getAllPacientes() {
