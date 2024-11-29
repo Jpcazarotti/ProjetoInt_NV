@@ -3,28 +3,54 @@ require_once 'DBConexao.php';
 
 class UsuarioModel {
 
-    public function getAllUsuarios()
-    {
-        // Inserir SQL
+    private $conn;
+
+    public function __construct() {
+        $db = new DBConexao();
+        $this->conn = $db->getConnection();
     }
 
-    public function getUsuarioById($id)
-    {
-        // Inserir SQL
+    public function getAllUsuarios() {
+        $query = "SELECT id, nome, email, tipo FROM usuarios";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt;
     }
 
-    public function createUsuario($dados)
-    {
-        // Inserir SQL
+    public function getUsuarioById($id) {
+        $query = "SELECT id, nome, email, tipo FROM usuarios WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function updateUsuario($id, $dados)
-    {
-        // Inserir SQL
+    public function createUsuario($dados) {
+        $query = "INSERT INTO usuarios (nome, email, senha, tipo) VALUES (:nome, :email, :senha, :tipo)";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':nome', $dados['nome']);
+        $stmt->bindParam(':email', $dados['email']);
+        $stmt->bindParam(':senha', password_hash($dados['senha'], PASSWORD_DEFAULT)); // Criptografando a senha
+        $stmt->bindParam(':tipo', $dados['tipo']);
+        return $stmt->execute();
     }
 
-    public function deleteUsuario($id)
-    {
-        // Inserir SQL
+    public function updateUsuario($id, $dados) {
+        $query = "UPDATE usuarios SET nome = :nome, email = :email, senha = :senha, tipo = :tipo WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':nome', $dados['nome']);
+        $stmt->bindParam(':email', $dados['email']);
+        $stmt->bindParam(':senha', password_hash($dados['senha'], PASSWORD_DEFAULT)); // Criptografando a senha
+        $stmt->bindParam(':tipo', $dados['tipo']);
+        $stmt->bindParam(':id', $id);
+        return $stmt->execute();
+    }
+
+    public function deleteUsuario($id) {
+        $query = "DELETE FROM usuarios WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':id', $id);
+        return $stmt->execute();
     }
 }
+?>

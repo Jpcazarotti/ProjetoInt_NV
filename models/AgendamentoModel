@@ -1,0 +1,56 @@
+<?php
+require_once 'DBConexao.php';
+
+class AgendamentoModel {
+
+    private $conn;
+
+    public function __construct() {
+        $db = new DBConexao();
+        $this->conn = $db->getConnection();
+    }
+
+    public function getAllAgendamentos() {
+        $query = "SELECT * FROM agendamentos";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt;
+    }
+
+    public function getAgendamentoById($id) {
+        $query = "SELECT * FROM agendamentos WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function createAgendamento($dados) {
+        $query = "INSERT INTO agendamentos (paciente_id, psicologo_id, evento_id, data_agendamento) VALUES (:paciente_id, :psicologo_id, :evento_id, :data_agendamento)";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':paciente_id', $dados['paciente_id']);
+        $stmt->bindParam(':psicologo_id', $dados['psicologo_id']);
+        $stmt->bindParam(':evento_id', $dados['evento_id']);
+        $stmt->bindParam(':data_agendamento', $dados['data_agendamento']);
+        return $stmt->execute();
+    }
+
+    public function updateAgendamento($id, $dados) {
+        $query = "UPDATE agendamentos SET paciente_id = :paciente_id, psicologo_id = :psicologo_id, evento_id = :evento_id, data_agendamento = :data_agendamento WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':paciente_id', $dados['paciente_id']);
+        $stmt->bindParam(':psicologo_id', $dados['psicologo_id']);
+        $stmt->bindParam(':evento_id', $dados['evento_id']);
+        $stmt->bindParam(':data_agendamento', $dados['data_agendamento']);
+        $stmt->bindParam(':id', $id);
+        return $stmt->execute();
+    }
+
+    public function deleteAgendamento($id) {
+        $query = "DELETE FROM agendamentos WHERE id = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(':id', $id);
+        return $stmt->execute();
+    }
+}
+?>
