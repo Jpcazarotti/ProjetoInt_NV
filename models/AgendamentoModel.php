@@ -3,6 +3,7 @@ require_once 'DBConexao.php';
 
 class AgendamentoModel
 {
+    private $agendamento;
     private $conn;
 
     public function __construct()
@@ -40,6 +41,7 @@ class AgendamentoModel
 
     public function createAgendamento($dados)
     {
+        $this->agendamento = new AgendamentoModel(); 
 
         if (!isset($dados['paciente_id'], $dados['psicologo_id'], $dados['evento_id'], $dados['data_agendamento'])) {
             echo "Dados incompletos para o agendamento.";

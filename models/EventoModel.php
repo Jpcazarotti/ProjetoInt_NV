@@ -3,6 +3,7 @@ require_once 'DBConexao.php';
 
 class EventoModel
 {
+    private $evento;
     private $conn;
 
     public function __construct()
@@ -39,6 +40,7 @@ class EventoModel
 
     public function createEvento($dados)
     {
+        $this->evento = new EventoModel();
 
         if (empty($dados['nome']) || empty($dados['data']) || empty($dados['descricao'])) {
             echo "Dados incompletos para criar o evento.";
