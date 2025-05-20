@@ -57,24 +57,19 @@
       <div class="row">
         <div class="col-md-3">
           <h1 id="logo">
-            <a href="index.php"><img
-                src="view/img/Projeto Remover fundo.png"
-                alt="Logo do site"
-                width="130"
+            <a href="index.php"><img src="view/img/Projeto_logo.png" alt="Logo" width="130"
                 class="img-fluid" /></a>
           </h1>
         </div>
-        <div id="menu" class="col-md-5">
+        <div id="menu" class="col-md-6">
           <nav>
             <ul>
               <li><a href="index.php">Home</a></li>
               <li><a href="view/sobre_nos.php">Sobre Nós</a></li>
               <li><a href="view/nt.php">Notícias e Atualizações</a></li>
+              <li><a href="view/login.php">Entrar</a></li>
             </ul>
           </nav>
-          <div id="login">
-            <button type="submit"><a href="view/login.php">Login</a></button>
-          </div>
         </div>
       </div>
     </div>
@@ -109,35 +104,17 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <p id="botoes_aten" class="text-center" data-aos="fade-up">
-              <button
-                id="button_aten_online"
-                class="btn bot"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#aten_online"
-                aria-expanded="false"
-                aria-controls="aten_online">
+              <button id="button_aten_online" class="btn bot" type="button" data-bs-toggle="collapse"
+                data-bs-target="#aten_online" aria-expanded="false" aria-controls="aten_online">
                 <h5>Instituições Online</h5>
-                <img
-                  src="view/img/aten_online.png"
-                  alt="Atendimento Online. Clique para saber mais."
-                  width="300"
-                  class="img-fluid bt_img" />
+                <img src="view/img/aten_online.png" alt="Atendimento Online. Clique para saber mais."
+                  width="300" class="img-fluid bt_img" />
               </button>
-              <button
-                id="button_aten_presencial"
-                class="btn bot"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#aten_presencial"
-                aria-expanded="false"
-                aria-controls="aten_presencial">
+              <button id="button_aten_presencial" class="btn bot" type="button" data-bs-toggle="collapse"
+                data-bs-target="#aten_presencial" aria-expanded="false" aria-controls="aten_presencial">
                 <h5>Instituições Presenciais</h5>
-                <img
-                  src="view/img/aten_presencial.png"
-                  alt="Atendimento Presencial. Clique para saber mais."
-                  width="300"
-                  class="img-fluid bt_img" />
+                <img src="view/img/aten_presencial.png" alt="Atendimento Presencial. Clique para saber mais."
+                  width="300" class="img-fluid bt_img" />
               </button>
             </p>
           </div>
@@ -148,17 +125,11 @@
           <div class="col-md-10">
             <div class="collapse multi-collapse" id="aten_online">
               <div class="card card-body backBotoes">
-                <div
-                  class="btn-group"
-                  role="group"
-                  aria-label="botoes_aten_online">
+                <div class="btn-group" role="group" aria-label="botoes_aten_online">
                   <button type="button" class="btn btn_text">
                     <a href="https://casademarias.com/" target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/casa de marias.png"
-                          alt="casa das marias"
-                          class="img-fluid" />
+                        <img src="view/img/casa_marias.png" alt="casa das marias" class="img-fluid" />
                       </div>
                       <h5>Casa De Marias</h5>
                     </a>
@@ -166,10 +137,7 @@
                   <button type="button" class="btn btn_text">
                     <a href="https://www.casaum.org/" target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/casa1.png"
-                          alt="casa1"
-                          class="img-fluid" />
+                        <img src="view/img/casa1.png" alt="casa1" class="img-fluid" />
                       </div>
                       <h5>Casa 1</h5>
                     </a>
@@ -177,22 +145,16 @@
                   <button type="button" class="btn btn_text">
                     <a href="https://www.bemdoestar.org/" target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/bem do estar.png"
-                          alt="Instituto bem do estar"
+                        <img src="view/img/bem_do_estar.png" alt="Instituto bem do estar"
                           class="img-fluid" />
                       </div>
                       <h5>Bem Do Estar</h5>
                     </a>
                   </button>
                   <button type="button" class="btn btn_text">
-                    <a
-                      href="https://institutoborboletaazul.org.br/"
-                      target="_blank">
+                    <a href="https://institutoborboletaazul.org.br/" target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/borboletaAzul.png"
-                          alt="Instituto Borboleta Azul"
+                        <img src="view/img/borboletaAzul.png" alt="Instituto Borboleta Azul"
                           class="img-fluid" />
                       </div>
                       <h5>Borboleta Azul</h5>
@@ -201,10 +163,7 @@
                   <button type="button" class="btn btn_text">
                     <a href="https://ipefem.org.br/" target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/ipefem.png"
-                          alt="Instituto Ipefem"
-                          class="img-fluid" />
+                        <img src="view/img/ipefem.png" alt="Instituto Ipefem" class="img-fluid" />
                       </div>
                       <h5>Ipefem</h5>
                     </a>
@@ -212,9 +171,7 @@
                   <button type="button" class="btn btn_text">
                     <a href="https://cvv.org.br/" target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/cvv.png"
-                          alt="Centro de Valorização da Vida"
+                        <img src="view/img/cvv.png" alt="Centro de Valorização da Vida"
                           class="img-fluid" />
                       </div>
                       <h5>CVV</h5>
@@ -228,38 +185,25 @@
       </div>
       <div class="container">
         <div id="rowpresencial" class="row justify-content-center coalp">
-          <div class="col-md-8">
+          <div class="col-md-10">
             <div class="collapse multi-collapse" id="aten_presencial">
               <div class="card card-body backBotoes">
                 <h5 class="text-center">Instituições - Marília-SP</h5>
                 <h6 class="text-center">Clique para saber mais.</h6>
-                <div
-                  class="btn-group"
-                  role="group"
-                  aria-label="Basic example">
+                <div class="btn-group" role="group" aria-label="Basic example">
                   <button type="button" class="btn btn_text">
-                    <a
-                      href="https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps"
+                    <a href="https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps/caps"
                       target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/caps.png"
-                          alt="caps"
-                          class="img-fluid" />
+                        <img src="view/img/caps.png" alt="caps" class="img-fluid" />
                       </div>
                       <h5>CAPS</h5>
                     </a>
                   </button>
-                  <button
-                    type="button"
-                    class="btn toggle-button btn_text"
-                    onclick="toggleNumber()">
+                  <button type="button" class="btn toggle-button btn_text" onclick="toggleNumber()">
                     <div id="ahref">
                       <div class="boxImg">
-                        <img
-                          src="view/img/samu.png"
-                          alt="samu"
-                          class="img-fluid" />
+                        <img src="view/img/samu.png" alt="samu" class="img-fluid" />
                       </div>
                       <h5>SAMU</h5>
                       <div id="samu-number" class="hidden-number">
@@ -268,14 +212,10 @@
                     </div>
                   </button>
                   <button type="button" class="btn btn_text">
-                    <a
-                      href="https://blog.unimar.br/2020/07/22/clinica-de-psicologia-da-unimar/"
+                    <a href="https://blog.unimar.br/2020/07/22/clinica-de-psicologia-da-unimar/"
                       target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/unimar.png"
-                          alt="Unimar"
-                          class="img-fluid" />
+                        <img src="view/img/unimar.png" alt="Unimar" class="img-fluid" />
                       </div>
                       <h5>Unimar</h5>
                     </a>
@@ -283,12 +223,25 @@
                   <button type="button" class="btn btn_text">
                     <a href="https://www.aa.org.br/" target="_blank">
                       <div class="boxImg">
-                        <img
-                          src="view/img/AA.png"
-                          alt="alcolicos anonimos"
-                          class="img-fluid" />
+                        <img src="view/img/AA.png" alt="alcolicos anonimos" class="img-fluid" />
                       </div>
                       <h5>Alcoólicos Anônimos</h5>
+                    </a>
+                  </button>
+                  <button type="button" class="btn btn_text">
+                    <a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/u/upa-24h" target="_blank">
+                      <div class="boxImg">
+                        <img src="view/img/upa.png" alt="UPA" class="img-fluid" />
+                      </div>
+                      <h5>UPA</h5>
+                    </a>
+                  </button>
+                  <button type="button" class="btn btn_text">
+                    <a href="https://amorexigente.org/grupos-presenciais/" target="_blank">
+                      <div class="boxImg">
+                        <img src="view/img/ae.png" alt="Assossiação Mariliense de Amor Exigente - AMAE" class="img-fluid" />
+                      </div>
+                      <h5>AMAE</h5>
                     </a>
                   </button>
                 </div>
@@ -309,80 +262,44 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <div
-              id="carrosel"
-              class="carousel slide"
-              data-bs-ride="carousel"
-              data-aos="fade-up">
+            <div id="carrosel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
               <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carrosel"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"></button>
-                <button
-                  type="button"
-                  data-bs-target="#carrosel"
-                  data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carrosel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrosel" data-bs-slide-to="1"
                   aria-label="Slide 2"></button>
-                <button
-                  type="button"
-                  data-bs-target="#carrosel"
-                  data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carrosel" data-bs-slide-to="2"
                   aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                  <img
-                    src="view/img/Passeata dos Idosos.png"
-                    class="d-block w-100 img-carrosel"
+                  <img src="view/img/PasseataIdosos.png" class="d-block w-100 img-carrosel"
                     alt="passeata dos idosos" />
-                  <div
-                    class="carousel-caption d-none d-md-block texto_carrosel">
+                  <div class="carousel-caption d-none d-md-block texto_carrosel">
                     <h5>Passeata para Saúde</h5>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img
-                    src="view/img/Evento Saúde-Mental.png"
-                    class="d-block w-100 img-carrosel"
-                    alt="evento" />
-                  <div
-                    class="carousel-caption d-none d-md-block texto_carrosel">
+                  <img src="view/img/EventoSaúde.png" class="d-block w-100 img-carrosel" alt="evento" />
+                  <div class="carousel-caption d-none d-md-block texto_carrosel">
                     <h5>Caminhada pela Vida</h5>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                  <img
-                    src="view/img/Palestra.png"
-                    class="d-block w-100 img-carrosel"
-                    alt="palestra" />
-                  <div
-                    class="carousel-caption d-none d-md-block texto_carrosel">
+                  <img src="view/img/Palestra.png" class="d-block w-100 img-carrosel" alt="palestra" />
+                  <div class="carousel-caption d-none d-md-block texto_carrosel">
                     <h5>Palestra Sobre Saúde Mental</h5>
                   </div>
                 </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carrosel"
+              <button class="carousel-control-prev" type="button" data-bs-target="#carrosel"
                 data-bs-slide="prev">
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
               </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carrosel"
+              <button class="carousel-control-next" type="button" data-bs-target="#carrosel"
                 data-bs-slide="next">
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Próximo</span>
               </button>
             </div>
@@ -395,7 +312,7 @@
   <footer id="footer">
     <div id="rodape" class="container">
       <div class="row justify-content-center">
-        <div class="col-md-3 rd">
+        <div class="col-md-2 rd">
           <h2>CAM</h2>
           <ul class="rp">
             <li><a href="index.php">Home</a></li>
@@ -405,9 +322,10 @@
               <a href="view/pdp.php">Política de Privacidade</a>
             </li>
             <li><a href="view/faq.php">FAQ</a></li>
+            <li><a href="#">Aplicativo CAM</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <h2>Contato</h2>
           <ul class="rp">
             <li>

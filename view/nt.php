@@ -5,34 +5,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CAM</title>
-  <link rel="shortcut icon" href="img/Projeto CAM - Logo do Site.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="shortcut icon" href="img/ProjetoIntegrador(SemNome).png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  <link
+    rel="shortcut icon"
+    href="img/Projeto CAM - Logo do Site.png"
+    type="image/x-icon" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet" />
-  <meta name="description"
+  <meta
+    name="description"
     content="CAM: Sua jornada de bem-estar começa aqui. Descubra onde encontrar apoio emocional para uma mente mais saudável." />
-  <meta name="keywords"
+  <meta
+    name="keywords"
     content="CAM,saúde mental, apoio emocional, conscientização, bem-estar, solidariedade, comunidade, recursos, auto-cuidado, compreensão, esperança,depressão, suicídio." />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWYC0130QK"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-DWYC0130QK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag('js', new Date());
+    gtag("js", new Date());
 
-    gtag('config', 'G-DWYC0130QK');
+    gtag("config", "G-DWYC0130QK");
   </script>
 </head>
 
@@ -42,16 +57,17 @@
       <div class="row">
         <div class="col-md-3">
           <h1 id="logo">
-            <a href="../index.php"><img src="img/Projeto Remover fundo.png" alt="Logo" width="130"
+            <a href="index.php"><img src="img/Projeto_logo.png" alt="Logo" width="130"
                 class="img-fluid" /></a>
           </h1>
         </div>
-        <div id="menu" class="col-md-5">
+        <div id="menu" class="col-md-6">
           <nav>
             <ul>
               <li><a href="../index.php">Home</a></li>
               <li><a href="sobre_nos.php">Sobre Nós</a></li>
               <li><a href="nt.php">Notícias e Atualizações</a></li>
+              <li><a href="login.php">Entrar</a></li>
             </ul>
           </nav>
         </div>
@@ -108,11 +124,30 @@
       </div>
     </section>
 
+    <section id="blocoVideo">
+      <div class="container">
+        <div class="row rows">
+          <div class="col-md-6 text-center" data-aos="fade-right">
+            <h2>Saúde Mental Importa</h2>
+            <p id="textVideo">
+              Você já parou para pensar em como anda sua saúde mental? Neste vídeo, você vai descobrir por que cuidar da mente é tão importante quanto cuidar do corpo. Entenda os sinais de alerta, saiba onde buscar ajuda e veja como pequenas atitudes podem transformar sua vida. Assista agora e dê o primeiro passo para o seu bem-estar!
+            </p>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/2FGI1Zuf--E?start=9"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="twobloco">
       <div class="container">
         <div class="row rows">
           <div class="col-md-6 text-center" data-aos="fade-right">
-            <img src="img/Palestra.png" alt="Palestra" class="img-fluid" />
+            <img class="iframe" src="img/Palestra.png" alt="Palestra" class="img-fluid" />
           </div>
           <div class="col-md-6 text-center" data-aos="fade-left">
             <p class="textinhos">
@@ -136,12 +171,12 @@
             </p>
           </div>
           <div class="col-md-6 text-center" data-aos="fade-left">
-            <img src="img/Passeata dos Idosos.png" alt="Passeata" class="img-fluid" />
+            <img class="iframe" src="img/PasseataIdosos.png" alt="Passeata" class="img-fluid" />
           </div>
         </div>
         <div class="row rows">
           <div class="col-md-6 text-center" data-aos="fade-right">
-            <img src="img/Evento Saúde-Mental.png" alt="Evento" class="img-fluid" />
+            <img class="iframe" src="img/EventoSaúde.png" alt="Evento" class="img-fluid" />
           </div>
           <div class="col-md-6 text-center" data-aos="fade-left">
             <p class="textinhos">
@@ -161,19 +196,20 @@
   <footer id="footer">
     <div id="rodape" class="container">
       <div class="row justify-content-center">
-        <div class="col-md-3 rd">
+        <div class="col-md-2 rd">
           <h2>CAM</h2>
           <ul class="rp">
-            <li><a href="../index.php">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="sobre_nos.php">Sobre Nós</a></li>
             <li><a href="nt.php">Notícias e Atualizações</a></li>
             <li>
               <a href="pdp.php">Política de Privacidade</a>
             </li>
             <li><a href="faq.php">FAQ</a></li>
+            <li><a href="#">Aplicativo CAM</a></li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <h2>Contato</h2>
           <ul class="rp">
             <li>
@@ -190,11 +226,12 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

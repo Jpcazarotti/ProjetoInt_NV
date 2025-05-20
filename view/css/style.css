@@ -27,7 +27,7 @@ body {
 }
 
 #logo {
-  margin-left: -210px;
+  margin-left: 0;
   text-decoration: none;
   margin-top: -9%;
 }
@@ -71,7 +71,20 @@ body {
   font-weight: bold;
 }
 
-#banner::after {
+#banner_two {
+  position: relative;
+  background: url(../img/cachoeira.jpg) no-repeat;
+  background-size: cover;
+  height: 867px;
+  color: var(--texto2);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+#banner::after,
+#banner_two::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -163,6 +176,21 @@ body {
 .pna {
   font-size: 16px;
   font-weight: 400;
+}
+
+#blocoVideo {
+  background-color: rgba(73, 192, 220, 0.15);
+  margin-top: 60px;
+}
+
+#textVideo {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 20px 50px;
+}
+
+.iframe {
+  border-radius: 15px;    
 }
 
 #twobloco {
@@ -351,23 +379,23 @@ body {
   margin-right: 350px;
 }
 
-.lembrar_me {
-  margin-right: 280px;
-}
-
-.btnLogar {
+.btnLogarCadastrar, .btnLogar {
   background-color: rgb(73, 192, 220, 0.8);
-  width: 90px;
+  width: 110px;
+  height: 40px;
   border: none;
   border-radius: 30px;
-  margin-left: 300px;
-  margin-top: -75px;
+  margin-top: -3px;
 }
 
-#txt_login {
+.btnLogarCadastrarAlign, .btnLogarAlign {
   display: flex;
-  justify-content: space-between;
-  margin-top: -40px;
+  justify-content: end;
+}
+
+.txt_login a {
+  text-align: start;
+  padding-left: 15px;
 }
 
 #footer {
@@ -387,23 +415,23 @@ body {
 }
 
 .rd {
-  margin-right: 150px;
+  margin-right: 10%;
 }
 
 .rp {
   position: relative;
-  top: 8px;
-  padding: 0;
+  top: 2%;
+  text-align: start;
 }
 
 .rp li {
-  padding: 2px;
+  padding: 1%;
 }
 
 .fa-envelope {
-  font-size: 17px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
-  margin-right: 5px;
+  margin-right: 2%;
 }
 
 #copyright p {
@@ -434,10 +462,10 @@ body {
 @media (max-width: 768px) {
   .carousel-control-prev,
   .carousel-control-next {
-    width: 10%;
+      width: 10%;
   }
 
   .carousel-caption {
-    font-size: 0.8rem;
+      font-size: 0.8rem;
   }
 }
